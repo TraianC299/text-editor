@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Sidebar from "./Components/Sidebar";
+import TextEditor from "./Components/TextEditor";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div className="flex">
+    {/* <Sidebar></Sidebar> */}
+    <div className="w-full pointer-events-stroke">
+      <TextEditor></TextEditor>
     </div>
-  );
+  </div>;
 }
 
 export default App;
